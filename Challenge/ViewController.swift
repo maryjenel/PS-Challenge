@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         Manager.shared.getUsers { (users) in
                 self.users = users
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                self.tableView.reloadData()
+            }
         }
     }
 }
@@ -29,8 +32,9 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as! UserCell
+        let user = self.users[indexPath.row]
+        cell.configure(forUser: user)
         return cell
     }
 }
