@@ -14,6 +14,11 @@
 		B210A8021F193C310037FD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B210A8001F193C310037FD20 /* LaunchScreen.storyboard */; };
 		B210A80D1F193C310037FD20 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A80C1F193C310037FD20 /* ChallengeTests.swift */; };
 		B210A8181F193C310037FD20 /* ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8171F193C310037FD20 /* ChallengeUITests.swift */; };
+		B210A8261F193D440037FD20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8251F193D440037FD20 /* User.swift */; };
+		B210A8291F193D6B0037FD20 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8281F193D6B0037FD20 /* Posts.swift */; };
+		B210A82B1F193DA30037FD20 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A82A1F193DA30037FD20 /* Server.swift */; };
+		B210A82D1F193DD50037FD20 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A82C1F193DD50037FD20 /* Manager.swift */; };
+		B210A8331F19750B0037FD20 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8321F19750B0037FD20 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		B210A8131F193C310037FD20 /* ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B210A8171F193C310037FD20 /* ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUITests.swift; sourceTree = "<group>"; };
 		B210A8191F193C320037FD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B210A8251F193D440037FD20 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B210A8281F193D6B0037FD20 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Posts.swift; path = ../Posts.swift; sourceTree = "<group>"; };
+		B210A82A1F193DA30037FD20 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		B210A82C1F193DD50037FD20 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		B210A8321F19750B0037FD20 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,9 @@
 		B210A7F61F193C310037FD20 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				B210A8271F193D4A0037FD20 /* Models */,
+				B210A8341F1975100037FD20 /* Cells */,
+				B210A82F1F193DF70037FD20 /* Server/Manager */,
 				B210A7F71F193C310037FD20 /* AppDelegate.swift */,
 				B210A7F91F193C310037FD20 /* ViewController.swift */,
 				B210A7FB1F193C310037FD20 /* Main.storyboard */,
@@ -123,6 +136,40 @@
 				B210A8191F193C320037FD20 /* Info.plist */,
 			);
 			path = ChallengeUITests;
+			sourceTree = "<group>";
+		};
+		B210A8271F193D4A0037FD20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B210A8251F193D440037FD20 /* User.swift */,
+				B210A8281F193D6B0037FD20 /* Posts.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B210A82E1F193DEE0037FD20 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				B210A82A1F193DA30037FD20 /* Server.swift */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		B210A82F1F193DF70037FD20 /* Server/Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B210A82C1F193DD50037FD20 /* Manager.swift */,
+				B210A82E1F193DEE0037FD20 /* Server */,
+			);
+			name = Server/Manager;
+			sourceTree = "<group>";
+		};
+		B210A8341F1975100037FD20 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B210A8321F19750B0037FD20 /* UserCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B210A82B1F193DA30037FD20 /* Server.swift in Sources */,
+				B210A82D1F193DD50037FD20 /* Manager.swift in Sources */,
 				B210A7FA1F193C310037FD20 /* ViewController.swift in Sources */,
 				B210A7F81F193C310037FD20 /* AppDelegate.swift in Sources */,
+				B210A8261F193D440037FD20 /* User.swift in Sources */,
+				B210A8291F193D6B0037FD20 /* Posts.swift in Sources */,
+				B210A8331F19750B0037FD20 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
