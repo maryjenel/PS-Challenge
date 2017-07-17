@@ -16,6 +16,7 @@ protocol UserInteractorInput {
 
 protocol UserInteractorOutput {
     func presentUsers(_ users: [User])
+    func presentError(_ error: UserRequestModel.Error)
 }
 
 class UserInteractor: UserInteractorInput {
@@ -27,6 +28,8 @@ class UserInteractor: UserInteractorInput {
         managerAPIProvider.getUsers { (users) in
             if users.count > 0 {
                 self.output.presentUsers(users)
+            } else {
+                self.output.presentError(UserRequestModel.Error.noData(message:nil))
             }
         }
     }

@@ -9,3 +9,9 @@
 import Foundation
 
 // Models
+struct UserRequestModel {
+    enum Error {
+        case apiError(message:String?)
+        case noData(message:String?)
+    }
+}

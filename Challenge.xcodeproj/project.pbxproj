@@ -24,6 +24,7 @@
 		B210A83E1F19883D0037FD20 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8381F19883D0037FD20 /* UserPresenter.swift */; };
 		B210A83F1F19883D0037FD20 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8391F19883D0037FD20 /* UserRouter.swift */; };
 		B210A8401F19883D0037FD20 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A83A1F19883D0037FD20 /* UserViewController.swift */; };
+		B210A8441F1D1AD00037FD20 /* QueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B210A8431F1D1AD00037FD20 /* QueueHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		B210A8381F19883D0037FD20 /* UserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		B210A8391F19883D0037FD20 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
 		B210A83A1F19883D0037FD20 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		B210A8431F1D1AD00037FD20 /* QueueHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				B210A8341F1975100037FD20 /* Cells */,
 				B210A82F1F193DF70037FD20 /* Server/Manager */,
 				B210A7F71F193C310037FD20 /* AppDelegate.swift */,
+				B210A8431F1D1AD00037FD20 /* QueueHelper.swift */,
 				B210A7FB1F193C310037FD20 /* Main.storyboard */,
 				B210A7FE1F193C310037FD20 /* Assets.xcassets */,
 				B210A8001F193C310037FD20 /* LaunchScreen.storyboard */,
@@ -348,6 +351,7 @@
 				B210A8261F193D440037FD20 /* User.swift in Sources */,
 				B210A8291F193D6B0037FD20 /* Posts.swift in Sources */,
 				B210A8331F19750B0037FD20 /* UserCell.swift in Sources */,
+				B210A8441F1D1AD00037FD20 /* QueueHelper.swift in Sources */,
 				B210A83E1F19883D0037FD20 /* UserPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
