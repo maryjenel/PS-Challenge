@@ -37,8 +37,11 @@ class UserViewController: UIViewController {
 
 extension UserViewController: UserViewInput {
     func displayUsers(_ users: [User]) {
-        self.users = users
-        self.tableView.reloadData()
+        DispatchQueue.main.async {
+            self.users = users
+            self.tableView.reloadData()
+        }
+       
     }
     
 }
