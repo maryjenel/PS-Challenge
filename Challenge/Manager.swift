@@ -7,8 +7,10 @@
 //
 
 import Foundation
-
-class Manager {
+protocol ManagerAPI {
+    func getUsers(withCompletion: @escaping(_ users: [User]) -> ())
+}
+class Manager: ManagerAPI{
     static let shared = Manager()
 
     func getUsers(withCompletion: @escaping(_ users: [User]) -> ())  {
